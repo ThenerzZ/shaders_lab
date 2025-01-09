@@ -1,156 +1,108 @@
-# Shader Lab 🎨
+# Shader Lab 🎨 (Experimental)
 
-A powerful real-time image shader application built with React and Three.js. Apply and combine various shader effects to your images with an intuitive user interface.
+A WebGL shader demonstration project built with React and Three.js. This is an experimental project showcasing various GLSL shader effects and their combinations. Please note that this is a work in progress and may have stability issues.
 
+## ⚠️ Current Status
+This project is in early development and serves primarily as a demonstration/learning tool for WebGL shaders. Known issues include:
+- Rendering stability issues
+- Performance limitations with multiple shaders
+- Occasional visual glitches
+- Limited browser compatibility
 
-## Features
+## 🎯 Purpose
+The main goal of this project is to demonstrate:
+- GLSL shader implementation in a React environment
+- Real-time shader parameter manipulation
+- Shader combination techniques
+- WebGL texture handling
 
-### 🎯 Core Features
-- Real-time shader processing
-- Multiple shader effects
-- Drag & drop image upload
-- Adjustable shader parameters
-- Stackable effects with blend modes
-- Reorderable shader stack
+## 🌈 Available Shaders
+Each shader is implemented as a GLSL fragment shader:
 
-### 🌈 Available Shaders
-1. **Basic Adjustments**
-   - Brightness
-   - Contrast
-   - Saturation
-   - Hue Rotation
+1. **Basic Image Adjustments**
+   - Brightness/Contrast
+   - Saturation/Hue
+   - Basic color manipulation
 
-2. **Pixelate**
-   - Square pixels
-   - Hexagonal pixels
-   - Circle pixels
-
-3. **Glitch**
-   - Classic glitch
-   - Vertical glitch
-   - Block glitch
-
-4. **ASCII Art**
-   - Classic ASCII
-   - Colored ASCII
-   - Matrix style
-
-5. **Other Effects**
+2. **Effect Shaders**
+   - Pixelation (with multiple modes)
    - Wave distortion
    - RGB shift
    - Kaleidoscope
    - Vignette
    - Blur
+   - Glitch effects
    - Noise
    - Mirror
+   - ASCII art
 
-### 🎨 Blend Modes
-- Normal
-- Multiply
-- Screen
-- Overlay
-- Darken
-- Lighten
+3. **Blend Modes (not working)**
+   - Normal
+   - Multiply
+   - Screen
+   - Overlay
+   - Darken
+   - Lighten
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
+- Node.js
+- Modern web browser with WebGL support
 
 ### Installation
 ```bash
-# Clone the repository
 git clone https://github.com/ThenerzZ/shaders_lab.git
-
-# Navigate to project directory
 cd shaders_lab
-
-# Install dependencies
 npm install
-# or
-yarn install
-
-# Start the development server
 npm run dev
-# or
-yarn dev
 ```
 
 ## 💻 Usage
+1. Upload an image using drag & drop
+2. Add shader effects from the dropdown
+3. Adjust parameters using the sliders
+4. Experiment with different combinations
 
-1. **Upload an Image**
-   - Drag & drop an image into the upload area
-   - Or click to select from your files
+## ⚙️ Technical Implementation
+- Built with React and Three.js
+- Uses React Three Fiber for Three.js integration
+- GLSL shaders for all effects
+- Material-UI for the interface
 
-2. **Add Shaders**
-   - Click the "Add Shader Effect" dropdown
-   - Select desired shader from the list
+## 🐛 Known Issues
+1. **Rendering Issues**
+   - White screen on some browsers
+   - Inconsistent shader behavior
+   - Memory leaks with multiple effects
 
-3. **Adjust Parameters**
-   - Use sliders to fine-tune shader parameters
-   - Experiment with different blend modes
-   - Try different shader modes for varied effects
+2. **Performance**
+   - Slow with multiple shaders
+   - High memory usage
+   - Frame rate drops with complex effects
 
-4. **Manage Shader Stack**
-   - Drag shaders to reorder them
-   - Remove unwanted shaders
-   - Reset all parameters if needed
-
-## 🛠️ Built With
-- [React](https://reactjs.org/) - UI Framework
-- [Three.js](https://threejs.org/) - 3D Graphics Library
-- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) - React renderer for Three.js
-- [Material-UI](https://mui.com/) - UI Components
-- [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)) - Shader Language
-
-## 📝 Technical Details
-
-### Shader Implementation
-Each shader is implemented using GLSL and supports:
-- Custom uniforms for parameter control
-- Multiple rendering modes
-- Blend mode support
-- Real-time parameter updates
-
-### Performance
-- Efficient texture handling
-- GPU-accelerated processing
-- Optimized render pipeline
-- Automatic resource cleanup
-
-## 🤝 Contributing
-
-Contributions are welcome! Here are some ways you can contribute:
-
-1. **Add New Shaders**
-   - Implement new shader effects
-   - Add new blend modes
-   - Create new shader modes
-
-2. **Improve Performance**
-   - Optimize render pipeline
-   - Enhance memory management
-   - Improve resource utilization
-
-3. **Bug Fixes**
-   - Report issues
-   - Submit pull requests
-   - Improve error handling
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-- Three.js community for shader examples and inspiration
-- React Three Fiber team for the amazing React integration
-- Material-UI team for the beautiful components
+3. **Browser Support**
+   - Limited mobile support
+   - WebGL compatibility issues
+   - Inconsistent behavior across browsers
 
 ## 🔮 Future Plans
-- Export processed images
-- Shader preset system
-- More shader effects
-- Batch processing
-- WebGL 2.0 features
-- Mobile optimization
+1. **Stability Improvements**
+   - Fix rendering pipeline
+   - Optimize memory usage
+   - Improve error handling
+
+2. **Features**
+   - More shader effects
+   - Better blend mode implementation
+   - Shader presets
+   - Image export
+   - Mobile support
+
+3. **Performance**
+   - Optimize multi-pass rendering
+   - Reduce memory footprint
+   - Better resource management
+
+## 📜 License
+MIT License - Feel free to use this code for learning and experimentation.
