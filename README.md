@@ -86,23 +86,5 @@ npm run dev
    - WebGL compatibility issues
    - Inconsistent behavior across browsers
 
-## 🔮 Future Plans
-1. **Stability Improvements**
-   - Fix rendering pipeline
-   - Optimize memory usage
-   - Improve error handling
-
-2. **Features**
-   - More shader effects
-   - Better blend mode implementation
-   - Shader presets
-   - Image export
-   - Mobile support
-
-3. **Performance**
-   - Optimize multi-pass rendering
-   - Reduce memory footprint
-   - Better resource management
-
 ## 📜 License
 MIT License - Feel free to use this code for learning and experimentation.
